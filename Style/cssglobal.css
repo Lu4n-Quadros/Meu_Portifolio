@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #edf2f7;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--roxo-claro);
+    border-radius: 9999px;
+}
+
+/* ================== MINHAS FONTES============================================== */
+
+@font-face {font-family: 'gilroy';src: url('/arq/fonts/otf/Gilroy-Light.otf') format('opentype');}
+@font-face {font-family: 'Av';src: url('/arq/fonts/otf/AvenirNextLTPro-Bold.otf') format('opentype');}
+@font-face {font-family: 'Av2';src: url('/arq/fonts/otf/AvenirNextLTPro-Regular.otf') format('opentype');}
+@font-face {font-family: 'gilroy-bold';src: url('/arq/fonts/otf/Gilroy-ExtraBold.otf') format('opentype');}
+@font-face {font-family: 'high';src: url('/arq/fonts/otf/Highrush\ Condensed.otf') format('opentype');}
+@font-face {font-family: 'rbbold';src: url('/arq/fonts/otf/RBNo3.1-Bold.otf') format('opentype');}
+@font-face {font-family: 'cocogooseultralight';src: url('/arq/fonts/ttf/Cocogoose\ Pro\ Ultralight-trial.ttf')  format('truetype');}
+@font-face {font-family: 'FREESCPT';src: url('/arq/fonts/ttf/FREESCPT.TTF')  format('truetype');}
+@font-face {font-family: 'FRADMCN';src: url('/arq/fonts/ttf/FRADMCN.TTF')  format('truetype');}
+@font-face {font-family: 'av3';src: url('/arq/fonts/ttf/avenir-next-heavy.ttf')  format('truetype');}
+
+
+
+/* ================== MINHAS FONTES============================================== */
+
+
+
+/* ================== MINHAS CORES============================================== */
+
+:root {
+    --roxo-escuro:#1A1A58;
+    --roxo-claro: #714FE4;
+    --azul-claro: #3226F4;
+    --preto:      #060D1F;
+    --azul-escuro:#030A8C;
+    
+    --cor-azul-medio:     #203D91;
+    --cor-azul-escuro:    #193072;
+    --cor-azul-claro:     #4468D6;
+    --cor-azul-maisclaro: #6F89D8;
+    --cor-azul:           #2A4EBC;
+
+    --cor-azul-claro-novo:     #59C7F3;
+    --cor-azul-medio-novo:     #0D8BD8;
+    --cor-azul-maisclaro-novo: #A1DFF8;
+    --cor-azul-maisescuro-novo:#CFEFFC;
+    --cor-azul-novo:           #6FD0F5;
+
+    --cor-azul-escuro-novo: #034AA6;
+   --cor-azul-muito-escuro: #012340;
+   --cor-azul-ciano:        #05AFF2;
+   --cor-cinza-azulado:     #778E9E;
+   --cor-cinza-claro:       #F2F2F2;
+    }
+
+/* ============================================================================== */

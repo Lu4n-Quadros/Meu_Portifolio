@@ -1,0 +1,172 @@
+
+html {
+    height: 100vh;
+    font-size: 62.5%;
+}
+
+
+.body{
+    
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-size: cover;
+  overflow-x: hidden;
+    
+}
+
+.background-layer {
+   
+    background: radial-gradient(circle, #4c0086 50%, #19002c );
+    background-size: 100% 100%;
+    animation: degrade-animado 3s infinite alternate;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1; 
+}
+
+.background-layer::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-image: url('/arq/img/portfolio-fundo.png');
+  background-size:cover; /* Alterado para cover */
+  background-repeat: no-repeat;
+  opacity:0.35;
+ 
+}
+
+/* ===================ANIMAÇÃO DO FUNDO========================================== */
+
+@keyframes degrade-animado {
+  0% {
+      background-size: 100% 100%;
+      background-position: 50% 50%; /* Adicionando o ponto central */
+  }
+
+  100% {
+      background-size: 150% 150%;
+      background-position: 50% 50%; /* Mantendo o ponto central durante a expansão */
+  }
+}
+
+/* ============================================================================= */
+
+.content5 {
+  /* Estilo para o conteúdo principal */
+  position: relative; /* Garante que os elementos filhos usem posições relativas a este contêiner */
+  z-index: 1; /* Garante que o conteúdo principal esteja acima da div de fundo */
+}
+
+h1{
+    color: blue;
+}
+ 
+  .un{
+    display: flex;
+    margin-top: 4%;
+    width: 100vw;
+    height: 100vh;
+   
+   
+  }
+  .left{
+
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+        
+  }
+
+  .left h1{
+    background: linear-gradient(to right,rgb(245, 225, 255), white); -webkit-background-clip:text;
+    color: transparent;
+    font-family: av;
+    font-size: 8rem;
+  }
+
+  .left h2{
+    color: rgb(210, 210, 210);
+    font-family: av2;
+    font-size: 2.4rem;
+  }
+
+  .left h2 span {
+    color: rgb(252, 251, 251);
+    font-family: av;
+    font-size: 1.6rem;
+  }
+
+  .btnProjetos {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 3rem;
+ 
+    background: linear-gradient(to right, var(--roxo-claro), var(--roxo-escuro));
+    border: none;
+    margin: 1rem;
+    transition:0.4s;
+    filter: drop-shadow(3px 3px 1px  #00000041);
+    
+  }
+  
+  .btnProjetos:hover {
+    border: var(--roxo-claro) 2px solid;
+  }
+  
+  .btnProjetos a {
+    text-decoration: none;
+    color: white;
+    font-family: gilroy;
+    font-size: 2rem;
+  }
+  .divBtnProjetos{
+    margin-top: 2%;
+    display: flex;
+    width: 57%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rigth{
+
+        display: flex;
+        width: 30vw;
+        justify-content: center;
+        align-items: center;
+        
+  }
+  
+  .container {
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva para efeito 3D */
+  }
+  
+  .moving-image {
+    width: 50%;
+    /* filter: drop-shadow(0px 0px 3px rgb(255, 20, 255)); */
+    
+    border: solid 1px var(--roxo-claro);
+    padding: 10px; 
+    border-radius:10px;
+    
+    transform-origin: center center;
+    transition: transform 0.5s ease-in-out; /* Adiciona transição suave à rotação */
+    /* filter: drop-shadow(10px 15px 6px  #0000006c);  */
+
+  }
+
+  .container img{
+    border-radius: 20px;
+  }
+
+ 
+  

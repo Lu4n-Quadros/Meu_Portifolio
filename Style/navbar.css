@@ -1,0 +1,118 @@
+.container6 {
+    max-width: 128rem;
+    margin: auto;
+   
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maior {
+    flex: 60%;
+}
+
+
+
+.menor {
+    flex: 30%;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px rgb(211, 211, 211) solid;
+
+    background:rgba(40, 0, 89, 0.738);
+    backdrop-filter: blur(2rem);
+    
+    z-index: 1000; /* Certifique-se de que a navbar esteja na frente dos outros elementos */
+}
+
+
+header p {
+    font-size: 2rem;
+    color: white;
+    font-family: gilroy;
+    margin-left: 20rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80rem;
+}
+
+ul li {
+    display: flex;
+    margin: 0rem 3rem;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: gilroy, sans-serif;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+
+    color: rgb(151, 217, 255);
+    font-size: 1.6rem;
+
+}
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px; /* Ajuste a posição da linha conforme necessário */
+    left: 0;
+    background-color: #c6e7fd; /* Cor da linha (underline) */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.btn-contato button {
+    padding: 0.8rem 2rem;
+    border: 0;
+    background: linear-gradient(to right, var(--roxo-claro), var(--roxo-escuro));
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+    border-radius: 10rem;
+    font-family: gilroy;
+    filter: drop-shadow(2px 2px 1px  #0000001b);
+    
+    
+}
+
+.btn-contato button:hover {
+    padding: 0.8rem 2.5rem;
+    border: solid 1px var(--roxo-claro);
+   
+    filter: drop-shadow(5px 5px 1px  #0000001b);
+    
+    
+}

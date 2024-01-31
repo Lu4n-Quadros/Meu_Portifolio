@@ -1,0 +1,161 @@
+:root {
+    --scroll-height: 25px;
+  }
+  
+.two .cardPerfil {
+    max-width: 100%;
+  
+  }
+  
+  section {
+    font-size: 1.5rem;
+    margin-inline: auto;
+    
+    padding-block: var(--scroll-height);
+    width: min(60ch, 100%);
+  }
+  
+  .two .cardPerfil {
+    
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 35% cover 40%;
+  }
+
+  /* ================================================= */
+  @keyframes scroll {
+    from {
+      scale: 0 1;
+    }
+    
+    to {
+      scale: 1 1;
+    }
+  }
+  
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      clip-path: inset(45% 20% 45% 20%);
+    }
+  
+    to {
+      opacity: 1;
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+  /* =============================================== */
+  
+  /* .c-indicator {
+    animation: scroll 1ms ease-in-out;
+    animation-timeline: scroll(root);
+    background-color: tomato;
+    transform-origin: left;
+    height: var(--scroll-height);
+    inset: 0;
+    position: fixed;
+  } */
+  
+  section {
+    font-size: 1.5rem;
+    margin-inline: auto;
+    width: min(60ch, 100%);
+  }
+  
+  p {
+    animation: appear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      translate: -5vw 0;
+    }
+    
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+  /* ================================================= icones */
+
+  :root {
+    --scroll-height: 25px;
+  }
+  
+.tec img {
+    max-width: 100%;
+  
+  }
+  
+  section {
+    font-size: 1.5rem;
+    margin-inline: auto;
+    
+    padding-block: var(--scroll-height);
+    width: min(60ch, 100%);
+  }
+  
+  .tec img {
+    
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 35% cover 40%;
+  }
+
+  /* ===================================================================== */
+
+  :root {
+    --scroll-height: 25px;
+  }
+  
+.cardIcones a img {
+    max-width: 100%;
+  
+  }
+  
+  section {
+    font-size: 1.5rem;
+    margin-inline: auto;
+    
+    padding-block: var(--scroll-height);
+    width: min(60ch, 100%);
+  }
+  
+  .cardIcones a img {
+    
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 35% cover 37%;
+  }
+
+  /* ======================================== */
+
+
+
+:root {
+  --scroll-height: 25px;
+}
+
+.D .txtSobreMim a img {
+  max-width: 100%;
+
+}
+
+section {
+  font-size: 1.5rem;
+  margin-inline: auto;
+  
+  padding-block: var(--scroll-height);
+  width: min(60ch, 100%);
+}
+
+.D .txtSobreMim a img {
+  
+  animation: reveal 1ms ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 35% cover 37%;
+}
